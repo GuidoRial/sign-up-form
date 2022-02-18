@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,700&display=swap");
+
+:root {
+    --label-color: #525a64;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+}
+
+.image-container {
+    background-image: url(./halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    width: 40%;
+    height: 100%;
+}
+
+.text-and-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1em;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 100px;
+    font-weight: 700;
+    color: white;
+
+    font-size: 5rem;
+}
+
+img {
+    width: 4rem;
+    height: 4.5rem;
+}
+
+.content {
+    width: 60%;
+    position: relative;
+    right: 0;
+}
+
+header,
+main,
+footer {
+    height: 31%;
+    width: 58vw;
+    padding-left: 30px;
+}
+
+header {
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+    font-size: 1.3rem;
+}
+
+header,
+footer {
+    background-color: #f9fafb;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+main > h2 {
+    font-size: 1.2rem;
+    color: #3f4753;
+    margin-bottom: 10px;
+}
+
+label {
+    color: var(--label-color);
+    font-weight: 700;
+}
+
+input {
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 3px;
+}
+
+footer {
+    position: absolute;
+}
+
+.action-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    top: 50px;
+}
+
+.account-button {
+    width: 12rem;
+    height: 3rem;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    color: #f9fafb;
+    font-weight: 700;
+    background-color: #596d48;
+}
+
+.account-button:hover {
+    background-color: #637751;
+}
+
+.log-in {
+    cursor: pointer;
+    color: #596d48;
+    font-weight: 700;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 30px;
+    grid-gap: 10px;
+    width: 70%;
+}
